@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="db3cb7e4-8b7a-464e-8bd3-37434a6409d7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8080/Juego/Solitario" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Solitario.disco" MetadataType="Disco" ID="2440d102-012b-4afc-9c7e-12a71997d5d2" SourceId="1" SourceUrl="http://localhost:8080/Juego/Solitario?disco" />
+    <MetadataFile FileName="Solitario.xsd" MetadataType="Schema" ID="8e5cba7e-6db7-4f28-b0f5-97bfb5c0c3c5" SourceId="1" SourceUrl="http://localhost:8080/Juego/Solitario?xsd=xsd0" />
+    <MetadataFile FileName="Solitario.wsdl" MetadataType="Wsdl" ID="0587bf93-bdcb-4e75-a0e0-faef1774f569" SourceId="1" SourceUrl="http://localhost:8080/Juego/Solitario?wsdl" />
+    <MetadataFile FileName="Solitario1.xsd" MetadataType="Schema" ID="0d123401-e465-4471-ac52-c6ad3b66f956" SourceId="1" SourceUrl="http://localhost:8080/Juego/Solitario?xsd=xsd2" />
+    <MetadataFile FileName="Solitario2.xsd" MetadataType="Schema" ID="13c4bde9-071d-4a8f-8893-7928986db868" SourceId="1" SourceUrl="http://localhost:8080/Juego/Solitario?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

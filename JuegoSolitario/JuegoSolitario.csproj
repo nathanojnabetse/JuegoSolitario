@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D64AA00E-9B30-4681-96EA-1A6B48990561}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JuegoSolitario</RootNamespace>
+    <AssemblyName>JuegoSolitario</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Carta.cs" />
+    <Compile Include="Connected Services\ServicioSolitario\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Connected Services\ServicioSolitario\Solitario.wsdl" />
+    <None Include="Connected Services\ServicioSolitario\Solitario.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServicioSolitario\Solitario1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServicioSolitario\Solitario2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServicioSolitario\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServicioSolitario\Solitario.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServicioSolitario\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServicioSolitario\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServicioSolitario\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gifs-animados-casino-257151.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Anfitrion\Anfitrion.csproj">
+      <Project>{a15c9afe-b324-4ca5-9304-d4e313488011}</Project>
+      <Name>Anfitrion</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
